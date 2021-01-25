@@ -25,13 +25,11 @@ void changeMenu(void){
   psButtonUp = digitalRead(buttonUp);
   psButtonDown = digitalRead(buttonDown);
 }
-
 void setup(void){
   lcd.begin(16, 2);
   pinMode(buttonUp, INPUT_PULLUP);
   pinMode(buttonDown, INPUT_PULLUP);
 }
-
 void loop(void) {
   dispMenu();
   changeMenu();
